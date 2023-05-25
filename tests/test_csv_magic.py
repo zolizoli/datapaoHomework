@@ -101,7 +101,7 @@ class TestCalulateStats(unittest.TestCase):
                 "event_time": "2023-02-01T20:00:00.000Z",
             },
         ]
-        res1 = [('1', '7.5', '1', '7.5')]
-        res2 = [('1', '4.0')]
+        res1 = [("1", "7.5", "1", "7.5")]
+        res2 = [("1", "4.0")]
         test_case = calculate_stats(data)
         self.assertEqual(test_case, (res1, res2))

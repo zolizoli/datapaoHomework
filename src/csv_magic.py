@@ -45,6 +45,7 @@ def rows_from_a_csv_file(filename, skip_first_line=False):
 
 def calculate_stats(rows):
     """calculate stats on generators using itertools.groupby"""
+
     ## helper functions for sorting
     def by_user_id(row):
         return row["user_id"]
